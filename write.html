@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +30,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -35,42 +38,45 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">  
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="" class="logo d-flex align-items-center">
-        <img src="assets/img/whitelogo.png" alt="Company Logo">      
-      </a> 
+        <img src="assets/img/whitelogo.png" alt="Company Logo">
+      </a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
-        <ul>          
+        <ul>
           <li><a href="4business.html"> For Business</a></li>
           <li><a class="write-a-review" href="write.html">Write a Review</a></li>
-          <li><a href="signin.html">Sign InR</a></li>
-          <li><a href="signup.html"> Sign UpR</a></li>          
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="signup.html"> Sign Up</a></li>
         </ul>
-      </nav><!-- .navbar -->     
-    </div> 
+      </nav><!-- .navbar -->
+    </div>
   </header><!-- End Header -->
-  <!-- End Header --> 
+  <!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Page Main Picture ======= -->
     <div class="pagempic">
       <div class="page-header d-flex align-items-center">
-  
-        <div class="container"> 
+
+        <div class="container">
           <div class="row gy-4 d-flex justify-content-between">
 
-            <div class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center">         
+            <div class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center">
               <p data-aos="fade-up" data-aos-delay="100"> Find a business to review </p>
-              <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up"  data-aos-delay="200">
-                <input type="text" class="form-control" placeholder="Business website">  
-                <input type="text" class="form-control" placeholder="Or Business Name"> 
+              <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up"
+                data-aos-delay="200">
+                <input type="text" class="form-control" placeholder="Business website">
+                <input type="text" class="form-control" placeholder="Or Business Name">
                 <button type="submit" class="btn btn-light" style="background-color: #78b7ac">Search</button>
-              </form>                          
+              </form>
             </div>
-
+            <div class="col-lg-4 order-2 order-lg-1 d-flex justify-content-end text-end">
+              <p class="image">Images Provided by <br>ABC company</p>
+            </div>
           </div>
         </div>
 
@@ -78,17 +84,37 @@
 
       <nav>
         <div class="container">
-          <ol>
-            <li><a>Categories R</a></li>
-            <li>Sub-category 1 R</li>
-            <li>Sub-category 2 R</li>
-          </ol>
+          <ul class="nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 1</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 2</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 3</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+          </ul>
         </div>
-      </nav>
+      </nav>    </div><!-- End Page Main Picture -->
 
-    </div><!-- End Page Main Picture -->
-
-    <!-- ======= Service Details Section =======  //NEED TO CHANGE THE CLASS NAME --> 
+    <!-- ======= Service Details Section =======  //NEED TO CHANGE THE CLASS NAME -->
     <section id="service-details" class="service-details">
       <div class="container" data-aos="fade-up">
 
@@ -97,53 +123,96 @@
           <div class="col-lg-8">
             <h3>ABC Legal Investigations R</h3>
 
-            <div class="icon flex-shrink-0">
-              <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-            </div>   
-            <p>15 reviews R</p>
-            <br>
-            <div class="col-lg-10"> <!-- NEED TO CHANGE PHP -->
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <div class="row mb-3">
+          <div class="stars col-4">
+            <label class="stars__item">
+              <input type="radio" name="star-rating" value="1" />
+            </label>
+            <label class="stars__item">
+              <input type="radio" name="star-rating" value="2" />
+            </label>
+            <label class="stars__item">
+              <input type="radio" name="star-rating" value="3" />
+            </label>
+            <label class="stars__item">
+              <input type="radio" name="star-rating" value="4" />
+            </label>
+            <label class="stars__item">
+              <input type="radio" name="star-rating" value="5" checked />
+            </label>
+           
+          </div>
+          <div class="col-4 d-flex justify-content-start">
+            <p>25 reviews</p>
+          </div>
+         </div>
+
+            <div class="col-lg-10">
+              <div>
+                This is the first time that you submit a 1-starreview. Your ID is required and your proofs of evidences
+                are optional but highly recommended.
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Is this business also a local one?" required>
+                  <input type="text" class="form-control" name="firstName" id="firstName" placeholder="legal first name"
+                    required />
                 </div>
                 <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="How many stars do you give?" required>
+                  <input type="text" class="form-control" name="lastName" id="lastName" placeholder="legal last name"
+                    required />
+                </div>
+                <div class="text-center"><button type="submit" class="btn btn-custom mt-3">Submit</button></div>
+              </div>
+              <div class="mt-3">
+                This is the first time that you submit a review. Your password creation is required.
+                <div class="form-group mt-3">
+                  <input type="password" class="form-control" name="password" id="password" placeholder="Password"
+                    required />
+                </div>
+                <div class="form-group mt-3">
+                  <input type="password" class="form-control" name="password-confirm" id="password-confirm"
+                    placeholder="Password-Confirm" required />
+                </div>
+                <div class="text-center"><button type="submit" class="btn btn-custom mt-3">Submit</button></div>
+              </div>
+              <!-- NEED TO CHANGE PHP -->
+              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                <div class="form-group mt-3">
+                  <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="businessLocal" checked>
+                    <label class="form-check-label" for="businessLocal">Is this business also a local
+                      one?</label>
+                  </div>
+                </div>
+                <div class="form-group mt-3 d-flex align-items-center">
+                  How many stars do you give:&nbsp;&nbsp;&nbsp;
+                  <div class="stars">
+                    <label class="stars__item">
+                      <input type="radio" name="subject" value="1" />
+                    </label>
+                    <label class="stars__item">
+                      <input type="radio" name="subject" value="2" />
+                    </label>
+                    <label class="stars__item">
+                      <input type="radio" name="subject" value="3" />
+                    </label>
+                    <label class="stars__item">
+                      <input type="radio" name="subject" value="4" />
+                    </label>
+                    <label class="stars__item">
+                      <input type="radio" name="subject" value="5" />
+                    </label>
+                  </div>
                 </div>
                 <div class="form-group mt-3">
                   <textarea class="form-control" name="message" rows="5" placeholder="Review" required></textarea>
                 </div>
-                <div class="text-center"><button type="submit">Post Review</button></div>
+                <div class="text-center"><button type="submit" class="btn btn-custom mt-3">Post Review</button></div>
               </form>
+
+              <div class="mb-3">
+                <label for="formFile" class="form-label">Upload evidences</label>
+                <input class="form-control" type="file" id="formFile">
+              </div>
             </div><!-- End Contact Form -->
-            <br><br><br>
-            <h4>Thumbnail/Name/Location R</h4>
-            <div class="icon flex-shrink-0">
-              <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
-            </div>  
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-
-            <h4>Thumbnail/Name/Location R</h4>
-            <div class="icon flex-shrink-0">
-              <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
-            </div>  
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-
-            <h4>Thumbnail/Name/Location R</h4>
-            <div class="icon flex-shrink-0">
-              <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
-              <i class="fa-sharp fa-solid fa-star"></i>
-            </div>  
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
 
           </div>
           <div class="col-lg-4">
@@ -154,13 +223,15 @@
             </div>
 
             <div>
-              <iframe style="border:0; width: 100%; height: 340px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+              <iframe style="border:0; width: 100%; height: 340px;"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                frameborder="0" allowfullscreen></iframe>
             </div><!-- End Google Maps -->
 
             <h4>Enim qui eos rerum in delectus</h4>
             <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est.</p>
             <img src="assets/img/service-details.jpg" alt="" class="img-fluid services-img">
-          </div>        
+          </div>
         </div>
 
       </div>
@@ -178,7 +249,8 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span>EPI</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -190,7 +262,7 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>            
+            <li><a href="#">Home</a></li>
           </ul>
         </div>
 
@@ -198,7 +270,7 @@
           <h4>Our Services</h4>
           <ul>
             <li><a href="#">Business Rating</a></li>
-            </ul>
+          </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
@@ -206,7 +278,7 @@
           <p>
             123 Main Street <br>
             Dreamland, CA 535022<br>
-            United States <br><br>
+            United States <br>
             <strong>Phone:</strong> +1 234 567 8910<br>
             <strong>Email:</strong> info@example.com<br>
           </p>
@@ -230,7 +302,8 @@
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 

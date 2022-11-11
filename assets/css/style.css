@@ -1,0 +1,18 @@
+.nav-link:after {
+  content: "\f078";
+  font-family: 'Font Awesome\ 5 Free';
+  padding: 0 0 0 5px;
+  font-size: 15px;
+  font-weight: bold;
+
+  }
+
+  .image{
+    color: #ffffff !important;
+    font-size: small;
+    margin-top:40px;
+    
+  }
+  html::-webkit-scrollbar-thumb{
+    background: red;
+  }

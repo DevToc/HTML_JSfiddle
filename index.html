@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,49 +30,56 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
-
+  <link href="assets/css/style.css" rel="stylesheet">
+  <style>
+   
+  </style>
 </head>
 
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">  
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="" class="logo d-flex align-items-center">
-        <img src="assets/img/whitelogo.png" alt="Company Logo">      
-      </a> 
+        <img src="assets/img/whitelogo.png" alt="Company Logo">
+      </a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
-        <ul>          
+        <ul>
           <li><a href="4business.html"> For Business</a></li>
           <li><a class="write-a-review" href="write.html">Write a Review</a></li>
-          <li><a href="signin.html">Sign InR</a></li>
-          <li><a href="signup.html"> Sign UpR</a></li>          
+          <li><a href="signin.html">Sign In</a></li>
+          <li><a href="signup.html"> Sign Up</a></li>
         </ul>
-      </nav><!-- .navbar -->     
-    </div> 
+      </nav><!-- .navbar -->
+    </div>
   </header><!-- End Header -->
-  <!-- End Header --> 
+  <!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Page Main Picture ======= -->
     <div class="pagempic">
       <div class="page-header d-flex align-items-center">
-  
-        <div class="container"> 
+
+        <div class="container">
           <div class="row gy-4 d-flex justify-content-between">
 
-            <div class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center">         
+            <div class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center">
               <p data-aos="fade-up" data-aos-delay="100"> Find a business to review </p>
-              <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up"  data-aos-delay="200">
-                <input type="text" class="form-control" placeholder="Business website">  
-                <input type="text" class="form-control" placeholder="Or Business Name"> 
+              <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up"
+                data-aos-delay="200">
+                <input type="text" class="form-control" placeholder="Business website">
+                <input type="text" class="form-control" placeholder="Or Business Name">
                 <button type="submit" class="btn btn-light" style="background-color: #78b7ac">Search</button>
-              </form>                          
+              </form>
             </div>
-
+            <div class="col-lg-4 order-2 order-lg-1 d-flex justify-content-end text-end">
+              <p class="image">Images Provided by <br>ABC company</p>
+            </div>
+                
           </div>
         </div>
 
@@ -78,307 +87,354 @@
 
       <nav>
         <div class="container">
-          <ol>
-            <li>Category 1 R</li>
-            <li>Category 2 R</li>
-            <li>Category 3 R</li>
-            <li>More...R </li>
-          </ol>
+          <ul class="nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 1</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 2</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 3</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+          </ul>
         </div>
       </nav>
 
     </div><!-- End Page Main Picture -->
 
-  <main id="main">
+    <main id="main">
 
-    <!-- ======= Featured Services Section ======= -->
-    <section id="featured-services" class="featured-services">
-      <div class="container">
+      <!-- ======= Featured Services Section ======= -->
+      <section id="featured-services" class="featured-services">
+        <div class="container">
 
-        <div class="row gy-4">
+          <div class="row gy-4">
 
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
-            <div>
-              <h4 class="title">Lawsuit against Major Airlines R</h4>
-              <p class="description">This is an example of what is going on et quas molestias excepturi sint occaecati cupiditate non provident</p>
-              <a href="" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+              <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+              <div>
+                <h4 class="title">Lawsuit against Major Airlines</h4>
+                <p class="description">This is an example of what is going on et quas molestias excepturi sint occaecati
+                  cupiditate non provident</p>
+                <a href="" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+            <!-- End 1 Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+              <div>
+                <h4 class="title">Petition Against Trucking Company</h4>
+                <p class="description">This is an example of what is going on laboris nisi ut aliquip ex ea commodo
+                  consequat tarad limino ata</p>
+                <a href="" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End 1 Service Item -->
+
+            <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+              <div>
+                <h4 class="title">Lawsuit against Data Storage Company</h4>
+                <p class="description">This is an example of what is going on in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur</p>
+                <a href="" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div><!-- End Service Item -->
+
+          </div>
+
+        </div>
+      </section><!-- End Featured Services Section -->
+
+      <!-- ======= Services Section ======= -->
+      <section id="service" class="services pt-0">
+        <div class="container" data-aos="fade-up">
+
+          <div class="section-header">
+            <span>Our Services</span>
+            <h2>Our Services</h2>
+
+          </div>
+
+          <div class="row gy-4">
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/review-rating.jpg" alt="" class="img-fluid">
+                </div>
+                <h3><a href="service-details.html" class="stretched-link">Business Rating</a></h3>
+                <p>
+                  Any customers, whether a paying member or not, can leave a review on a business, with the rating from
+                  1 to 5 stars. For 1-star rating, customer are asked to provide a government-issued ID, as they may be
+                  entitled to financial compensation later.
+                </p>
+              </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/business-info.jpg" alt="" class="img-fluid">
+                </div>
+                <h3><a href="service-details.html" class="stretched-link">Business Info</a></h3>
+                <p>As a paying member, a customer can request reports on up to five companies per month. The report
+                  would show the true entity of a business and a history of previous lawsuits. Customers are
+                  well-informed before making a purchase of goods or services. </p>
+              </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/lawsuits.jpg" alt="" class="img-fluid">
+                </div>
+                <h3><a href="service-details.html" class="stretched-link">Class Action Lawsuit</a></h3>
+                <p>1-star reviews on outrageous actions by various companies are gathered for our internal reviews. When
+                  we find the complaints have reach a critical mass, we will appoint a litigation law firm to file a
+                  class action lawsuit on behalf of all the 1-star reviewers on a particular business. </p>
+              </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/petitions.jpg" alt="" class="img-fluid">
+                </div>
+                <h3><a href="service-details.html" class="stretched-link">Petition</a></h3>
+                <p>Depending on each situation, sometimes it is more appropriate to ask companies to correct their
+                  actions instead of pursuing the Court of Law. We may file a petition on behalf of reviewers. The
+                  petition could be addressed to the companies themselves or to various governments or the Congress.</p>
+              </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/consulting.jpg" alt="" class="img-fluid">
+                </div>
+                <h3><a href="service-details.html" class="stretched-link">Consulting</a></h3>
+                <p>We provide consulting services to companies in various aspects, like setting the intention for the
+                  business success, tax and accounting services, remedies on how to mend customers relationship,
+                  sale/marketing and business plans.</p>
+              </div>
+            </div><!-- End Card Item -->
+
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div class="card">
+                <div class="card-img">
+                  <img src="assets/img/mediation.jpg" alt="" class="img-fluid">
+                </div>
+                <h3><a href="service-details.html" class="stretched-link">Mediation</a></h3>
+                <p>We provide low-cost mediation between customers and companies. This is a wonderful opportunities for
+                  customers who don't find themselves in a petition, a class action lawsuit but do not have money to
+                  pursue in the Court of Law. This is also a wonderful opportunity for companies to save cost and learn
+                  from mistakes, if there were any. </p>
+              </div>
+            </div><!-- End Card Item -->
+
+          </div>
+
+        </div>
+      </section><!-- End Services Section -->
+
+      <!-- ======= Call To Action Section ======= -->
+      <section id="call-to-action" class="call-to-action">
+        <div class="container" data-aos="zoom-out">
+
+          <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+              <h3>Call To Action</h3>
+              <P> Just a click awayYou have so much power in you as collective bargain. The only way to achieve a fair
+                market place where both producers and consumers enjoy the benefit is through your reviews. Do it now!
+              </p>
+              <a class="cta-btn" href="#">WRITE A REVIEW NOW </a>
             </div>
           </div>
-          <!-- End 1 Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
-            <div>
-              <h4 class="title">Petition Against Trucking Company R</h4>
-              <p class="description">This is an example of what is going on laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-              <a href="" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End 1 Service Item -->
-
-          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
-            <div>
-              <h4 class="title">Lawsuit against Data Storage Company R</h4>
-              <p class="description">This is an example of what is going on in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-              <a href="" class="readmore stretched-link"><span>Learn More</span><i class="bi bi-arrow-right"></i></a>
-            </div>
-          </div><!-- End Service Item -->
 
         </div>
+      </section><!-- End Call To Action Section -->
 
-      </div>
-    </section><!-- End Featured Services Section -->  
-        
-    <!-- ======= Services Section ======= -->
-    <section id="service" class="services pt-0">
-      <div class="container" data-aos="fade-up">
+      <!-- ======= Features Section ======= -->
+      <section id="features" class="features">
+        <div class="container">
 
-        <div class="section-header">
-          <span>Our Services</span>
-          <h2>Our Services R</h2>
+          <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+            <div class="col-md-5">
+              <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7">
+              <h3>R Showcase1 provident quasi corporis voluptates sit assumenda. STAR</h3>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check"></i> Ullam est qui quos consequatur eos accusamus.</li>
+              </ul>
+            </div>
+          </div><!-- Features Item -->
 
-        </div>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/review-rating.jpg" alt="" class="img-fluid">
-              </div>
-              <h3><a href="service-details.html" class="stretched-link">Business Rating</a></h3>
+          <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+            <div class="col-md-5 order-1 order-md-2">
+              <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
+            </div>
+            <div class="col-md-7 order-2 order-md-1">
+              <h3>R Showcase2 temporibus maiores provident</h3>
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+              </p>
               <p>
-                Any customers, whether a paying member or not, can leave a review on a business, with the rating from 1 to 5 stars. For 1-star rating, customer are asked to provide a government-issued ID, as they may be entitled to financial compensation later.
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in
+                culpa qui officia deserunt mollit anim id est laborum
               </p>
             </div>
-          </div><!-- End Card Item -->
+          </div><!-- Features Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/business-info.jpg" alt="" class="img-fluid">
-              </div>
-              <h3><a href="service-details.html" class="stretched-link">Business Info</a></h3>
-              <p>As a paying member, a customer can request reports on up to five companies per month. The report would show the true entity of a business and a history of previous lawsuits. Customers are well-informed before making a purchase of goods or services. </p>
+          <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+            <div class="col-md-5">
+              <img src="assets/img/features-3.jpg" class="img-fluid" alt="">
             </div>
-          </div><!-- End Card Item -->
+            <div class="col-md-7">
+              <h3>R Showcase3 consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+              <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut
+                quia voluptatem hic voluptas dolor doloremque.</p>
+              <ul>
+                <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+              </ul>
+            </div>
+          </div><!-- Features Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/lawsuits.jpg" alt="" class="img-fluid">
-              </div>
-              <h3><a href="service-details.html" class="stretched-link">Class Action Lawsuit</a></h3>
-              <p>1-star reviews on outrageous actions by various companies are gathered for our internal reviews. When we find the complaints have reach a critical mass, we will appoint a litigation law firm to file a class action lawsuit on behalf of all the 1-star reviewers on a particular business. </p>
+          <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+            <div class="col-md-5 order-1 order-md-2">
+              <img src="assets/img/features-4.jpg" class="img-fluid" alt="">
             </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/petitions.jpg" alt="" class="img-fluid">
-              </div>
-              <h3><a href="service-details.html" class="stretched-link">Petition</a></h3>
-              <p>Depending on each situation, sometimes it is more appropriate to ask companies to correct their actions instead of pursuing the Court of Law. We may file a petition on behalf of reviewers. The petition could be addressed to the companies themselves or to various governments or the Congress.</p>
+            <div class="col-md-7 order-2 order-md-1">
+              <h3>R Showcase4 Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+              <p class="fst-italic">
+                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+                in
+                culpa qui officia deserunt mollit anim id est laborum
+              </p>
             </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/consulting.jpg" alt="" class="img-fluid">
-              </div>
-              <h3><a href="service-details.html" class="stretched-link">Consulting</a></h3>
-              <p>We provide consulting services to companies in various aspects, like setting the intention for the business success, tax and accounting services, remedies on how to mend customers relationship, sale/marketing and business plans.</p>
-            </div>
-          </div><!-- End Card Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="card">
-              <div class="card-img">
-                <img src="assets/img/mediation.jpg" alt="" class="img-fluid">
-              </div>
-              <h3><a href="service-details.html" class="stretched-link">Mediation</a></h3>
-              <p>We provide low-cost mediation between customers and companies. This is a wonderful opportunities for customers who don't find themselves in a petition, a class action lawsuit but do not have money to pursue in the Court of Law. This is also a wonderful opportunity for companies to save cost and learn from mistakes, if there were any.  </p>
-            </div>
-          </div><!-- End Card Item -->
+          </div><!-- Features Item -->
 
         </div>
+      </section><!-- End Features Section -->
 
-      </div>
-    </section><!-- End Services Section -->
+    </main><!-- End #main -->
 
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
-      <div class="container" data-aos="zoom-out">
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
 
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h3>Call To Action R</h3>  
-            <P> Just a click awayYou have so much power in you as collective bargain. The only way to achieve a fair market place where both producers and consumers enjoy the benefit is through your reviews. Do it now!
-            </p>
-            <a class="cta-btn" href="#">WRITE A REVIEW NOW </a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Call To Action Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
       <div class="container">
+        <div class="row gy-4">
 
-        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="assets/img/features-1.jpg" class="img-fluid" alt="">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>EPI</span>
+            </a>
+            <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies
+              darta donna mare fermentum iaculis eu non diam phasellus.</p>
+            <div class="social-links d-flex mt-4">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
-          <div class="col-md-7">
-            <h3>R Showcase1 provident quasi corporis voluptates sit assumenda. STAR</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Useful Links</h4>
             <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check"></i> Ullam est qui quos consequatur eos accusamus.</li>
+              <li><a href="#">Home</a></li>
             </ul>
           </div>
-        </div><!-- Features Item -->
 
-        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/features-2.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 order-2 order-md-1">
-            <h3>R Showcase2 temporibus maiores provident</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
-            </p>
-          </div>
-        </div><!-- Features Item -->
-
-        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
-          <div class="col-md-5">
-            <img src="assets/img/features-3.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7">
-            <h3>R Showcase3 consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-            <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut quia voluptatem hic voluptas dolor doloremque.</p>
+          <div class="col-lg-2 col-6 footer-links">
+            <h4>Our Services</h4>
             <ul>
-              <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
+              <li><a href="#">Business Rating</a></li>
             </ul>
           </div>
-        </div><!-- Features Item -->
 
-        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
-          <div class="col-md-5 order-1 order-md-2">
-            <img src="assets/img/features-4.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 order-2 order-md-1">
-            <h3>R Showcase4 Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
-            <p class="fst-italic">
-              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+              123 Main Street <br>
+              Dreamland, CA 535022<br>
+              United States <br>
+              <strong>Phone:</strong> +1 234 567 8910<br>
+              <strong>Email:</strong> info@example.com<br>
             </p>
           </div>
-        </div><!-- Features Item -->
 
-      </div>
-    </section><!-- End Features Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-
-    <div class="container">
-      <div class="row gy-4">
-
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>EPI</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
         </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>            
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Business Rating</a></li>
-            </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            123 Main Street <br>
-            Dreamland, CA 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 234 567 8910<br>
-            <strong>Email:</strong> info@example.com<br>
-          </p>
-        </div>
-
       </div>
-    </div>
 
-    <div class="container mt-4">
-      <div class="copyright">
-        &copy; Copyright <strong><span>EPI</span></strong>. All Rights Reserved
+      <div class="container mt-4">
+        <div class="copyright">
+          &copy; Copyright <strong><span>EPI</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
+        </div>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
-      </div>
-    </div>
 
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
+    </footer><!-- End Footer -->
+    <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
 
-  <div id="preloader"></div>
+    <div id="preloader"></div>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
 </body>
 

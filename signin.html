@@ -16,7 +16,9 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +30,7 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
@@ -35,57 +38,79 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">  
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
       <a href="" class="logo d-flex align-items-center">
-        <img src="assets/img/whitelogo.png" alt="Company Logo">      
-      </a> 
+        <img src="assets/img/whitelogo.png" alt="Company Logo">
+      </a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
       <nav id="navbar" class="navbar">
-        <ul>          
+        <ul>
           <li><a href="4business.html"> For Business</a></li>
           <li><a class="write-a-review" href="write.html">Write a Review</a></li>
-          <li><a href="signup.html">Sign UpR</a></li>      
+          <li><a href="signup.html">Sign Up</a></li>
         </ul>
-      </nav><!-- .navbar -->     
-    </div> 
+      </nav><!-- .navbar -->
+    </div>
   </header><!-- End Header -->
-  <!-- End Header --> 
+  <!-- End Header -->
 
   <main id="main">
 
     <!-- ======= Page Main Picture ======= -->
     <div class="pagempic">
       <div class="page-header d-flex align-items-center">
-  
-        <div class="container"> 
+
+        <div class="container">
           <div class="row gy-4 d-flex justify-content-between">
 
-            <div class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center">         
+            <div class="col-lg-8 order-2 order-lg-1 d-flex flex-column justify-content-center">
               <p data-aos="fade-up" data-aos-delay="100"> Find a business to review </p>
-              <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up"  data-aos-delay="200">
-                <input type="text" class="form-control" placeholder="Business website">  
-                <input type="text" class="form-control" placeholder="Or Business Name"> 
+              <form action="#" class="form-search d-flex align-items-stretch mb-3" data-aos="fade-up"
+                data-aos-delay="200">
+                <input type="text" class="form-control" placeholder="Business website">
+                <input type="text" class="form-control" placeholder="Or Business Name">
                 <button type="submit" class="btn btn-light" style="background-color: #78b7ac">Search</button>
-              </form>                          
+              </form>
             </div>
-
+            <div class="col-lg-4 order-2 order-lg-1 d-flex justify-content-end text-end">
+              <p class="image">Images Provided by <br>ABC company</p>
+            </div>
           </div>
         </div>
 
       </div>
-
       <nav>
         <div class="container">
-          <ol>
-            <li>Category 1 R</li>
-            <li>Category 2 R</li>
-            <li>Category 3 R</li>
-            <li>More...R </li>
-          </ol>
+          <ul class="nav">
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 1</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 2</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Category 3</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">1</a></li>
+                <li><a class="dropdown-item" href="#">2</a></li>
+              
+              </ul>
+            </li>
+          </ul>
         </div>
       </nav>
-
     </div><!-- End Page Main Picture -->
 
     <!-- ======= Signin Signup Section ======= -->
@@ -94,45 +119,47 @@
 
         <div class="row g-0">
 
-          <div class="col-lg-7 sign-bg" style="background-image: url(assets/img/signup.jpg);"></div> 
 
           <div class="col-lg-5">
-            <form action="" method="post" class="input-form">  
+            <form action="" method="post" class="input-form">
               <h3>Sign in Epow now</h3>
               <p>Use one of your non-Epow accounts</p>
-              
-              <div class="col-md-12"> <!-- NEED A NOSE JOB FOR THE FACEBOOK, GOOGLE, AND APPLE options-->
-                <input type="text" name="name" class="form-control" placeholder="CONTINUE WITH FACEBOOK" required>
+
+              <div class="col-md-12">
+                <!-- NEED A NOSE JOB FOR THE FACEBOOK, GOOGLE, AND APPLE options-->
+                <input type="button" name="name" class="form-control" value="CONTINUE WITH FACEBOOK" required>
               </div>
 
               <div class="col-md-12 ">
-                <input type="email" class="form-control" name="email" placeholder="CONTINUE WITH GOOGLE" required>
+                <input type="button" class="form-control" name="email" value="CONTINUE WITH GOOGLE" required>
               </div>
 
               <div class="col-md-12">
-                <input type="text" class="form-control" name="phone" placeholder="CONTINUE WITH APPLE" required>
+                <input type="button" class="form-control" name="phone" value="CONTINUE WITH APPLE" required>
               </div>
 
               <div class="col-lg-12">
                 <h4>OR</h4>
                 <p>Use your Epow account</p>
               </div>
-              <!-- ======= Signin Form vs Form action ======= -->  
+              <!-- ======= Signin Form vs Form action ======= -->
               <div class="col-md-12 ">
-                  <input type="email" name="email" class="form-control" placeholder="Email" required>
+                <input type="email" name="email" class="form-control" placeholder="Email" required>
               </div>
 
               <div class="col-md-12 ">
-                  <input type="password" name="password" class="form-control" placeholder="Password" required>
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
               </div>
-              <p>Forget Password?</p>
+              <p>Forget <a href="">Password?</a></p>
 
               <div class="col-md-12 text-center">
-                <button type="submit">SIGN IN</button>
-                <p>If you are new to Epow, pls Sign up</p>
+                <button type="submit"><span class="fs-5">SIGN IN</span></button>
+                <p>If you are new to Epow, pls <a href="">Sign up</a></p>
               </div>
             </form>
           </div><!-- End Sign in Form -->
+
+          <div class="col-lg-7 sign-bg" style="background-image: url(assets/img/signup.jpg);"></div>
 
         </div>
 
@@ -150,7 +177,8 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span>EPI</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
+            donna mare fermentum iaculis eu non diam phasellus.</p>
           <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -162,7 +190,7 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="#">Home</a></li>            
+            <li><a href="#">Home</a></li>
           </ul>
         </div>
 
@@ -170,7 +198,7 @@
           <h4>Our Services</h4>
           <ul>
             <li><a href="#">Business Rating</a></li>
-            </ul>
+          </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
@@ -178,7 +206,7 @@
           <p>
             123 Main Street <br>
             Dreamland, CA 535022<br>
-            United States <br><br>
+            United States <br>
             <strong>Phone:</strong> +1 234 567 8910<br>
             <strong>Email:</strong> info@example.com<br>
           </p>
@@ -197,14 +225,15 @@
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/logis-bootstrap-logistics-website-template/ -->
-        
+
       </div>
     </div>
 
   </footer><!-- End Footer -->
   <!-- End Footer -->
 
-  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <div id="preloader"></div>
 

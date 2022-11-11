@@ -29,13 +29,55 @@ body {
   color: var(--color-default);
 }
 
+
+.btn-custom {
+  background-color: #78b7ac;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #7ccbbe !important;
+  color: white !important;
+}
+
+/* .star-rating */
+.stars .stars__item {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Set all stars to empty */
+.stars .stars__item::after {
+  content: "\f006";
+  font-family: FontAwesome;
+}
+
+/* Hide radio button */
+.stars .stars__item input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* If any of the inputs are checked fill in all the stars */
+.stars:has(.stars__item > input:checked) .stars__item:after {
+  content: "\f005";
+}
+
+/* change all the stars after the checked star to empty stars */
+.stars .stars__item:has(input:checked)~.stars__item:after {
+  content: "\f006";
+}
+
+/* end-star-rating */
+
 a {
-  color: var(--color-primary);
+  /* color: var(--color-primary); */
   text-decoration: none;
 }
 
 a:hover {
-  color: #160751;
+  color: #3300ff;
   text-decoration: none;
 }
 
@@ -125,7 +167,8 @@ section {
 
 
 .pagempic .page-header {
-  padding: 140px 0 40px 0; /*Bottom: 80 */
+  padding: 140px 0 40px 0;
+  /*Bottom: 80 */
   position: relative;
   background-size: cover;
   background-position: center;
@@ -140,6 +183,8 @@ section {
   inset: 0;
 }
 
+
+
 .pagempic form {
   background: #fff;
   padding: 5px;
@@ -147,7 +192,8 @@ section {
 }
 
 .pagempic form .form-control {
-  padding-top: 10px; /* 18 */
+  padding-top: 10px;
+  /* 18 */
   padding-bottom: 10px;
   padding-left: 20px;
   padding-right: 20px;
@@ -164,16 +210,15 @@ section {
 }
 
 .pagempic form .btn-light {
-  background-color: var(--color-primary); 
+  background-color: var(--color-primary);
   padding: 0px 30px;
 }
 
 .pagempic form .btn-primary:hover {
   background-color: #2756ff;
 }
-*/
 
-.pagempic .page-header h2 {
+*/ .pagempic .page-header h2 {
   font-size: 48px;
   font-weight: 500;
   color: #fff;
@@ -217,7 +262,7 @@ section {
   display: inline-block;
   padding-right: 10px;
   color: #25095b;
-  content: "/";
+  content: " ";
 }
 
 /*--------------------------------------------------------------
@@ -230,7 +275,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: var(--color-primary);
+  background-color: #78b7ac;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -649,7 +694,7 @@ section {
   font-weight: 700;
   margin-bottom: 10px;
   font-size: 20px;
-  color: var(--color-secondary); 
+  color: var(--color-secondary);
   transition: 0.3s;
 }
 
@@ -675,7 +720,7 @@ section {
 .featured-services .service-item:hover .title,
 .featured-services .service-item:hover .readmore,
 .featured-services .service-item:hover .icon i {
-  color: var(--color-primary);   
+  color: var(--color-primary);
 }
 
 /*--------------------------------------------------------------
@@ -703,7 +748,7 @@ section {
   flex-shrink: 0;
   font-size: 48px;
   /* color: var(--color-primary); */
-  color:#1a0e42;
+  color: #1a0e42;
   margin-right: 20px;
   line-height: 0;
 }
@@ -1253,7 +1298,7 @@ section {
 .stats-counter .stats-item span {
   font-size: 48px;
   display: block;
-  color: var(--color-secondary); 
+  color: var(--color-secondary);
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
@@ -1266,7 +1311,7 @@ section {
   display: block;
   width: 25px;
   height: 3px;
-  background: var(--color-primary); 
+  background: var(--color-primary);
   left: 0;
   right: 0;
   bottom: 0;
@@ -1279,7 +1324,7 @@ section {
   font-family: var(--font-primary);
   font-size: 15px;
   font-weight: 500;
-  color: var(--color-secondary); 
+  color: var(--color-secondary);
 
 }
 
@@ -1455,10 +1500,12 @@ section {
 # Contact Section
 --------------------------------------------------------------*/
 .contact {
-    margin-top: 0px; 
+  margin-top: 0px;
 }
+
 .contact .info-item+.info-item {
-  margin-top: 10px; /* 40 */
+  margin-top: 10px;
+  /* 40 */
 }
 
 .contact .info-item i {
@@ -1466,7 +1513,8 @@ section {
   background: var(--color-primary);
   color: #fff;
   width: 44px;
-  height: 0px; /*44*/
+  height: 0px;
+  /*44*/
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1704,13 +1752,15 @@ section {
 }
 
 .hppicture form .btn-primary {
-  background-color: var(--color-primary); /*-- Need to review --*/
+  background-color: var(--color-primary);
+  /*-- Need to review --*/
   padding: 15px 30px;
 }
 
 .hppicture form .btn-primary:hover {
   background-color: #2756ff;
 }
+
 /*--------------------------------------------------------------
 # Sign In / Sign Up Section
 --------------------------------------------------------------*/
@@ -1815,12 +1865,14 @@ section {
 }
 
 .signin-signup .input-form button[type=submit] {
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
+  background: #78b7ac;
   border: 0;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   border-radius: 4px;
+  width: 150px;
 }
 
 .signin-signup.input-form button[type=submit]:hover {
